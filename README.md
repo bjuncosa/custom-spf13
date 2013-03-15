@@ -12,6 +12,8 @@ If you want to fully use puppet functionalities you should have puppet installed
 
 As this configuration uses 256 colors you must make sure that your terminal supports 256 colors and it is configured to do so.
 
+For autocomplation to work fine, you'll need to install ctags (exuberant-ctags)
+
 Installation
 ============
 

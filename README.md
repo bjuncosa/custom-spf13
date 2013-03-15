@@ -6,13 +6,17 @@ custom-spf13 modified to edit puppet and python
 Requisites
 ==========
 
-To be able to install spf13-vim you'll need to have vim, git and curl installed in your machine.
+To be able to install spf13-vim you'll need to have : 
+  * vim
+  * git
+  * curl
+  * ctags (exuberant-ctags)
+  * puppet (if you want puppet functionalities)
 
 If you want to fully use puppet functionalities you should have puppet installed in your box.
 
 As this configuration uses 256 colors you must make sure that your terminal supports 256 colors and it is configured to do so.
 
-For autocomplation to work fine, you'll need to install ctags (exuberant-ctags)
 
 Installation
 ============
@@ -21,9 +25,12 @@ First follow the installation instructions from:
 
  * https://github.com/spf13/spf13-vim
 
-After you have this installed, you can download the .vimrc.local and .vimrc.bundles.local files and copy them to your home directory.
+git clone git://github.com/bjuncosa/custom-spf13.git
+ln -s ~/custom-spf13/.vimrc.local
+ln -s ~/custom-spf13/.vimrc.bundles.local
+ln -s ~/custom-spf13/ftplugins ~/.vim/ftplugins
 
-When you have done this, you can enter vim and type: 
+Once you've finished linking the configurations, you can enter vim and type: 
 
  * ":BundleInstall"
    * This will install all bundles that are missing

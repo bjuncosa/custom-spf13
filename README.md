@@ -3,6 +3,15 @@ custom-spf13
 
 custom-spf13 modified to edit puppet and python
 
+Requisites
+==========
+
+To be able to install spf13-vim you'll need to have vim, git and curl installed in your machine.
+
+If you want to fully use puppet functionalities you should have puppet installed in your box.
+
+As this configuration uses 256 colors you must make sure that your terminal supports 256 colors and it is configured to do so.
+
 Installation
 ============
 

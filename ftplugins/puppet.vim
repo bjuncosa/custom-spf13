@@ -1,3 +1,4 @@
+" File from https://gist.github.com/choffee/2497544
 " Takes some settings
 " g:puppet_command The location of the puppet command
 if !exists('g:puppet_command')
@@ -26,7 +27,7 @@ function PuppetDefineType(fname)
   " Cleare the buffer
   normal ggdG
   "Read in the new description
-  execute 'silent read !'.g:puppet_command.' describe '.fname
+  execute 'silent read !'.g:puppet_command.' describe '.a:fname
   " Go back to the top
   normal 1G
   setlocal nomodified
@@ -35,8 +36,6 @@ function PuppetDefineType(fname)
 endfunction
 
 " Setup two commands to define the word under the cursor
-"map <buffer> <leader>pt :call PuppetDefineType('<C-R><C-W>')<CR>
-"map <buffer> <leader>pT :call PuppetDefineType('<C-R><C-A>')<CR>
-map <leader>pt :call PuppetDefineType('<C-R><C-W>')<CR>
-map <leader>pT :call PuppetDefineType('<C-R><C-A>')<CR>
+map <buffer> <leader>pt :call PuppetDefineType('<C-R><C-W>')<CR>
+map <buffer> <leader>pT :call PuppetDefineType('<C-R><C-A>')<CR>
 

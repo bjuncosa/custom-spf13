@@ -25,10 +25,10 @@ First follow the installation instructions from:
 
  * https://github.com/spf13/spf13-vim
 
-git clone git://github.com/bjuncosa/custom-spf13.git
-ln -s ~/custom-spf13/.vimrc.local
-ln -s ~/custom-spf13/.vimrc.bundles.local
-ln -s ~/custom-spf13/ftplugins ~/.vim/ftplugins
+git clone git://github.com/bjuncosa/custom-spf13.git;
+ln -s ~/custom-spf13/.vimrc.local;
+ln -s ~/custom-spf13/.vimrc.bundles.local;
+ln -s ~/custom-spf13/ftplugins ~/.vim/ftplugins;
 
 Once you've finished linking the configurations, you can enter vim and type: 
 

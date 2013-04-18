@@ -94,7 +94,7 @@ nnoremap Y y$
 set virtualedit=block
 
 " replace all ocurrences
-set gdefault
+" set gdefault
 "
 "Ever notice a slight lag after typing the leader key + command? This lowers the timeout.
 set timeoutlen=250
@@ -104,6 +104,9 @@ set wrap
 
 "Nerdtree config
 let g:NERDTreeDirArrows=0
+
+"Open nedtree files in a new tab
+let NERDTreeMapOpenInTab='<ENTER>'
 
 "Pysmell specific config
 "source ~/.vim/plugins/pysmell.vim
@@ -115,3 +118,4 @@ source ~/.vim/ftplugins/puppet.vim
 "Pydiction specific config
 let g:pydiction_location = '/home/vagrant/.vim/bundle/pydiction/complete-dict'
 let g:pydiction_menu_height = 20
+

@@ -68,6 +68,7 @@ let g:indent_guides_enable_on_vim_startup = 0
 map <C-l> :TagbarToggle<CR>
 nmap <C-j> :tabprevious<CR>
 nmap <C-k> :tabnext<CR>
+nmap <C-t> :tabnew<CR>
 
 " Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
